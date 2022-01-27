@@ -425,11 +425,11 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return '试着好好练一下？';
-        if (cps <= 8) return 'TCL';
-        if (cps <= 10)  return 'TQL';
-        if (cps <= 15) return '您';
-        return '人？';
+        if (cps <= 49) return '你被白灯做成标本了';
+        if (cps <= 99) return '前辈,接下来一直和我在一起吧,好吗?';
+        if (cps <= 149)  return '前辈只会看着我一个人的吧?';
+        if (cps <= 199) return '实在想不出了';
+        return '?';
     }
 
     function toStr(obj) {
